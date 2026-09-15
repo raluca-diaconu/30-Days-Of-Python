@@ -1,25 +1,47 @@
 # Introduction
 # Day 1 - 30DaysOfPython Challenge
+#II
+#1.
+import sys
+print(sys.version)
 
-print("Hello World!")   # print hello world
+#2.
+print(3+4)
+print(3-4)
+print(3*4)
+print(3%4)
+print(3/4)
+print(3**4)
+print(3//4)
 
-print(2 + 3)   # addition(+)
-print(3 - 1)   # subtraction(-)
-print(2 * 3)   # multiplication(*)
-print(3 + 2)   # addition(+)
-print(3 - 2)   # subtraction(-)
-print(3 * 2)   # multiplication(*)
-print(3 / 2)   # division(/)
-print(3 ** 2)  # exponential(**)
-print(3 % 2)   # modulus(%)
-print(3 // 2)  # Floor division operator(//)
+ #3.
+print('Raluca')
+print('Diaconu')
+print('Romania')
+print('I am enjoying 30 days of python')
 
-# Checking data types
+#4.
+print(type(10))
+print(type(9.8))
+print(type(3.14))
+print(type(4-4j))
+print(type(['Asabeneh', 'Python', 'Finland']))
+print(type('Raluca'))
+print(type('Diaconu'))
+print(type('Romania'))
 
-print(type(10))                  # Int
-print(type(3.14))                # Float
-print(type(1 + 3j))              # Complex
-print(type('Asabeneh'))          # String
-print(type([1, 2, 3]))           # List
-print(type({'name': 'Asabeneh'}))  # Dictionary
-print(type({9.8, 3.14, 2.7}))    # Tuple
+#III
+#1.
+print(862)
+print(833.4)
+print(3+67j)
+print('EUUU')
+print(True)
+print([10,45,24,12])
+print((10,45,24,12))
+print({2, 5, 5, 2, 19.4})
+print({'nume':'Ana', 'varsta':91})
+
+#2.
+print(((2-3)**2)**0.5)
+print(((8-10)**2)**0.5)
