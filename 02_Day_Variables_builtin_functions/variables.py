@@ -1,40 +1,57 @@
+# Day 2: 30 Days of phyton programming
 
-# Variables in Python
+# I
 
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
-country = 'Finland'
-city = 'Helsinki'
-age = 250
-is_married = True
-skills = ['HTML', 'CSS', 'JS', 'React', 'Python']
-person_info = {
-    'firstname': 'Asabeneh',
-    'lastname': 'Yetayeh',
-    'country': 'Finland',
-    'city': 'Helsinki'
-}
+firstname = "Ana"
+lastname = "Cretu"
+fullname = "Ana Cretu"
+country = "Romania"
+City = "Bucharest"
+age = 18
+year = 2026
+ismarried = False
+istrue = True
+islighton = False
+a, b, c, d = 11, 12, 13, 14
 
-# Printing the values stored in the variables
+# II
 
-print('First name:', first_name)
-print('First name length:', len(first_name))
-print('Last name: ', last_name)
-print('Last name length: ', len(last_name))
-print('Country: ', country)
-print('City: ', city)
-print('Age: ', age)
-print('Married: ', is_married)
-print('Skills: ', skills)
-print('Person information: ', person_info)
+print(type(firstname))
+print(type(lastname))
+print(type(fullname))
+print(type(country))
+print(type(City))
+print(type(age))
+print(type(year))
+print(type(ismarried))
+print(type(istrue))
+print(type(islighton))
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
 
-# Declaring multiple variables in one line
+print(len(firstname))
+print(len(lastname))
 
-first_name, last_name, country, age, is_married = 'Asabeneh', 'Yetayeh', 'Helsink', 250, True
+num_one = 5
+num_two = 4
+total = num_one + num_two
+diff = num_one - num_two
+product = num_one * num_two
+division = num_one / num_two
+remainder = num_one % num_two
+exp = num_one**num_two
+floor_division = num_one // num_two
 
-print(first_name, last_name, country, age, is_married)
-print('First name:', first_name)
-print('Last name: ', last_name)
-print('Country: ', country)
-print('Age: ', age)
-print('Married: ', is_married)
+area_of_circle = 3.14 * (30**2)
+circum_of_circle = 2 * 3.14 * 30
+radius = float(input("radius: "))
+print("area of circle=", 3.14 * (radius**2))
+
+firstname = str(input("Enter first name= "))
+lastname = str(input("Enter last name= "))
+country = str(input("Enter country= "))
+age = int(input("Enter age= "))
+
+print(help("keywords"))
