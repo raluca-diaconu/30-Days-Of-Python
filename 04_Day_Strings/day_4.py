@@ -1,250 +1,112 @@
+# Day 4 - strings
 
-# Single line comment
-letter = 'P'                # A string could be a single character or a bunch of texts
-print(letter)               # P
-print(len(letter))          # 1
-greeting = 'Hello, World!'  # String could be  a single or double quote,"Hello, World!"
-print(greeting)             # Hello, World!
-print(len(greeting))        # 13
-sentence = "I hope you are enjoying 30 days of python challenge"
-print(sentence)
+# 1.
+s1 = "Thirty"
+s2 = "Days"
+s3 = "Of"
+s4 = "Python"
+s5 = s1 + " " + s2 + " " + s3 + " " + s4
+print(s5)
+# 2
+s1 = ["Coding", "For", "All"]
+print(" ".join(s1))
+# 3
+company = "Coding For All"
 
-# Multiline String
-multiline_string = '''I am a teacher and enjoy teaching.
-I didn't find anything as rewarding as empowering people.
-That is why I created 30 days of python.'''
-print(multiline_string)
-# Another way of doing the same thing
-multiline_string = """I am a teacher and enjoy teaching.
-I didn't find anything as rewarding as empowering people.
-That is why I created 30 days of python."""
-print(multiline_string)
+# 4
+print(company)
 
-# String Concatenation
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
-space = ' '
-full_name = first_name + space + last_name
-print(full_name)  # Asabeneh Yetayeh
-# Checking length of a string using len() builtin function
-print(len(first_name))  # 8
-print(len(last_name))   # 7
-print(len(first_name) > len(last_name))  # True
-print(len(full_name))  # 15
+# 5
+print(len(company))
+# 6
+print(company.upper())
+# 7
+print(company.lower())
+# 8
+print(company.capitalize())
+print(company.title())
+print(company.swapcase())
+# 9
+print(company[0:5])
+print(company.split())
+# 10
+print(company.find("Coding"))
+# 11
+print(company.replace("Coding", "Python"))
+# 12
+s = "Python For Everyone"
+s = s.replace("Everyone", "All")
 
-# Unpacking characters
-language = 'Python'
-a, b, c, d, e, f = language  # unpacking sequence characters into variables
-print(a)  # P
-print(b)  # y
-print(c)  # t
-print(d)  # h
-print(e)  # o
-print(f)  # n
+# 13
+print(" ".split(company))
 
-# Accessing characters in strings by index
-language = 'Python'
-first_letter = language[0]
-print(first_letter)  # P
-second_letter = language[1]
-print(second_letter)  # y
-last_index = len(language) - 1
-last_letter = language[last_index]
-print(last_letter)  # n
+# 14
+s = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
+print(s.split(","))
 
-# If we want to start from right end we can use negative indexing. -1 is the last index
-language = 'Python'
-last_letter = language[-1]
-print(last_letter)  # n
-second_last = language[-2]
-print(second_last)  # o
+# 15
+print(company[0])
 
-# Slicing
+# 16
+print(company[-1])
 
-language = 'Python'
-# starts at zero index and up to 3 but not include 3
-first_three = language[0:3]
-last_three = language[3:6]
-print(last_three)  # hon
-# Another way
-last_three = language[-3:]
-print(last_three)   # hon
-last_three = language[3:]
-print(last_three)   # hon
+# 17
+print(company[10])
 
-# Skipping character while splitting Python strings
-language = 'Python'
-pto = language[0:6:2]
-print(pto)  # pto
-
-# Escape sequence
-print('I hope every one enjoying the python challenge.\nDo you ?')  # line break
-print('Days\tTopics\tExercises')
-print('Day 1\t3\t5')
-print('Day 2\t3\t5')
-print('Day 3\t3\t5')
-print('Day 4\t3\t5')
-print('This is a back slash  symbol (\\)')  # To write a back slash
-print('In every programming language it starts with \"Hello, World!\"')
-
-# String Methods
-# capitalize(): Converts the first character the string to Capital Letter
-
-challenge = 'thirty days of python'
-print(challenge.capitalize())  # 'Thirty days of python'
-
-# count(): returns occurrences of substring in string, count(substring, start=.., end=..)
-
-challenge = 'thirty days of python'
-print(challenge.count('y'))  # 3
-print(challenge.count('y', 7, 14))  # 1
-print(challenge.count('th'))  # 2`
-
-# endswith(): Checks if a string ends with a specified ending
-
-challenge = 'thirty days of python'
-print(challenge.endswith('on'))   # True
-print(challenge.endswith('tion'))  # False
-
-# expandtabs(): Replaces tab character with spaces, default tab size is 8. It takes tab size argument
-
-challenge = 'thirty\tdays\tof\tpython'
-print(challenge.expandtabs())   # 'thirty  days    of      python'
-print(challenge.expandtabs(10))  # 'thirty    days      of        python'
-
-# find(): Returns the index of first occurrence of substring
-
-challenge = 'thirty days of python'
-print(challenge.find('y'))  # 5
-print(challenge.find('th'))  # 0
-
-# format()	formats string into nicer output
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
-job = 'teacher'
-country = 'Finland'
-sentence = 'I am {} {}. I am a {}. I live in {}.'.format(
-    first_name, last_name, job, country)
-print(sentence)  # I am Asabeneh Yetayeh. I am a teacher. I live in Finland.
-
-radius = 10
-pi = 3.14
-area = pi  # radius ## 2
-result = 'The area of circle with {} is {}'.format(str(radius), str(area))
-print(result)  # The area of circle with 10 is 314.0
-
-# index(): Returns the index of substring
-challenge = 'thirty days of python'
-print(challenge.find('y'))  # 5
-print(challenge.find('th'))  # 0
-
-# isalnum(): Checks alphanumeric character
-
-challenge = 'ThirtyDaysPython'
-print(challenge.isalnum())  # True
-
-challenge = '30DaysPython'
-print(challenge.isalnum())  # True
-
-challenge = 'thirty days of python'
-print(challenge.isalnum())  # False
-
-challenge = 'thirty days of python 2019'
-print(challenge.isalnum())  # False
-
-# isalpha(): Checks if all characters are alphabets
-
-challenge = 'thirty days of python'
-print(challenge.isalpha())  # True
-num = '123'
-print(num.isalpha())      # False
-
-# isdecimal(): Checks Decimal Characters
-
-challenge = 'thirty days of python'
-print(challenge.find('y'))  # 5
-print(challenge.find('th'))  # 0
-
-# isdigit(): Checks Digit Characters
-
-challenge = 'Thirty'
-print(challenge.isdigit())  # False
-challenge = '30'
-print(challenge.isdigit())   # True
-
-# isdecimal():Checks decimal characters
-
-num = '10'
-print(num.isdecimal())  # True
-num = '10.5'
-print(num.isdecimal())  # False
+# 18
+print(company[0] + company[7] + company[-3])
 
 
-# isidentifier():Checks for valid identifier means it check if a string is a valid variable name
+# 20
+print(company.index("C"))
+# 21
+print(company.index("F"))
+# 22
+print(company.rindex("l"))
+# 23
+print(
+    "You cannot end a sentence with because because because is a conjunction".index(
+        "because"
+    )
+)
 
-challenge = '30DaysOfPython'
-print(challenge.isidentifier())  # False, because it starts with a number
-challenge = 'thirty_days_of_python'
-print(challenge.isidentifier())  # True
+# 24
+print(
+    "You cannot end a sentence with because because because is a conjunction".rindex(
+        "because"
+    )
+)
 
+# 25
+print("You cannot end a sentence with because because because is a conjunction".split)
 
-# islower():Checks if all alphabets in a string are lowercase
+# 28
+print(company.startswith("Coding"))
+# 29
+print(company.endswith("coding"))
+# 30
+print(company.strip())
 
-challenge = 'thirty days of python'
-print(challenge.islower())  # True
-challenge = 'Thirty days of python'
-print(challenge.islower())  # False
+# 31
+print("30DaysOfPython".isidentifier())
 
-# isupper(): returns if all characters are uppercase characters
+# 32
+s = ["Django", "Flask", "Bottle", "Pyramid", "Falcon"]
+print("# ".join(s))
 
-challenge = 'thirty days of python'
-print(challenge.isupper())  # False
-challenge = 'THIRTY DAYS OF PYTHON'
-print(challenge.isupper())  # True
+# 33
+print("I am enjoying this challenge.\nI just wonder what is next.")
 
+# 34
+print("Name\tAge\tCountry\tCity\nAsabeneh\t250\tFinland\tHelsinki")
 
-# isnumeric():Checks numeric characters
-
-num = '10'
-print(num.isnumeric())      # True
-print('ten'.isnumeric())    # False
-
-# join(): Returns a concatenated string
-
-web_tech = ['HTML', 'CSS', 'JavaScript', 'React']
-result = '#, '.join(web_tech)
-print(result)  # 'HTML# CSS# JavaScript# React'
-
-# strip(): Removes both leading and trailing characters
-
-challenge = ' thirty days of python '
-print(challenge.strip('y'))  # 5
-
-# replace(): Replaces substring inside
-
-challenge = 'thirty days of python'
-print(challenge.replace('python', 'coding'))  # 'thirty days of coding'
-
-# split():Splits String from Left
-
-challenge = 'thirty days of python'
-print(challenge.split())  # ['thirty', 'days', 'of', 'python']
-
-# title(): Returns a Title Cased String
-
-challenge = 'thirty days of python'
-print(challenge.title())  # Thirty Days Of Python
-
-# swapcase(): Checks if String Starts with the Specified String
-
-challenge = 'thirty days of python'
-print(challenge.swapcase())   # THIRTY DAYS OF PYTHON
-challenge = 'Thirty Days Of Python'
-print(challenge.swapcase())  # tHIRTY dAYS oF pYTHON
-
-# startswith(): Checks if String Starts with the Specified String
-
-challenge = 'thirty days of python'
-print(challenge.startswith('thirty'))  # True
-challenge = '30 days of python'
-print(challenge.startswith('thirty'))  # False
+# 36
+a = 8
+b = 6
+print("{ } + { } = {}".format(a, b, a + b))
+print("{ } - { } = { }".format(a, b, a - b))
+print("{ } * { } = { }".format(a, b, a * b))
+print("{ } / { } = {:.2f}".format(a, b, a / b))
+print("{ } % { } = { }".format(a, b, a % b))
+print("{ } // { } = { }".format(a, b, a // b))
+print("{ } ** { } = { }".format(a, b, a**b))
